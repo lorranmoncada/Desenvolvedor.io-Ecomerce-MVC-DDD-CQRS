@@ -1,0 +1,15 @@
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\bin\Debug\net5.0\NerdStore.Vendas.Domain.deps.json
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\bin\Debug\net5.0\NerdStore.Vendas.Domain.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\bin\Debug\net5.0\ref\NerdStore.Vendas.Domain.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\bin\Debug\net5.0\NerdStore.Vendas.Domain.pdb
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\bin\Debug\net5.0\NerdStore.Core.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\bin\Debug\net5.0\NerdStore.Core.pdb
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\obj\Debug\net5.0\NerdStore.Vendas.Domain.csprojAssemblyReference.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\obj\Debug\net5.0\NerdStore.Vendas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\obj\Debug\net5.0\NerdStore.Vendas.Domain.AssemblyInfoInputs.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\obj\Debug\net5.0\NerdStore.Vendas.Domain.AssemblyInfo.cs
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\obj\Debug\net5.0\NerdStore.Vendas.Domain.csproj.CoreCompileInputs.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\obj\Debug\net5.0\NerdStore.Vendas.Domain.csproj.CopyComplete
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\obj\Debug\net5.0\NerdStore.Vendas.Domain.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\obj\Debug\net5.0\ref\NerdStore.Vendas.Domain.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Domain\obj\Debug\net5.0\NerdStore.Vendas.Domain.pdb

@@ -1,0 +1,8 @@
+C:\EComerceCurso\NerdStore\src\NerdStore.Core\bin\Debug\netcoreapp3.1\NerdStore.Core.deps.json
+C:\EComerceCurso\NerdStore\src\NerdStore.Core\bin\Debug\netcoreapp3.1\NerdStore.Core.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Core\bin\Debug\netcoreapp3.1\NerdStore.Core.pdb
+C:\EComerceCurso\NerdStore\src\NerdStore.Core\obj\Debug\netcoreapp3.1\NerdStore.Core.AssemblyInfoInputs.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Core\obj\Debug\netcoreapp3.1\NerdStore.Core.AssemblyInfo.cs
+C:\EComerceCurso\NerdStore\src\NerdStore.Core\obj\Debug\netcoreapp3.1\NerdStore.Core.csproj.CoreCompileInputs.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Core\obj\Debug\netcoreapp3.1\NerdStore.Core.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Core\obj\Debug\netcoreapp3.1\NerdStore.Core.pdb

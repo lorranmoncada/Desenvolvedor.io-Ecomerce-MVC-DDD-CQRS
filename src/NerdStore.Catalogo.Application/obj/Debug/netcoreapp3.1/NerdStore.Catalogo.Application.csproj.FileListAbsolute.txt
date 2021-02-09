@@ -1,0 +1,16 @@
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\bin\Debug\netcoreapp3.1\NerdStore.Catalogo.Application.deps.json
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\bin\Debug\netcoreapp3.1\NerdStore.Catalogo.Application.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\bin\Debug\netcoreapp3.1\NerdStore.Catalogo.Application.pdb
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\bin\Debug\netcoreapp3.1\NerdStore.Catalogo.Domain.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\bin\Debug\netcoreapp3.1\NerdStore.Catalogo.Infrastructure.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\bin\Debug\netcoreapp3.1\NerdStore.Core.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\bin\Debug\netcoreapp3.1\NerdStore.Catalogo.Domain.pdb
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\bin\Debug\netcoreapp3.1\NerdStore.Catalogo.Infrastructure.pdb
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\bin\Debug\netcoreapp3.1\NerdStore.Core.pdb
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\obj\Debug\netcoreapp3.1\NerdStore.Catalogo.Application.csprojAssemblyReference.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\obj\Debug\netcoreapp3.1\NerdStore.Catalogo.Application.AssemblyInfoInputs.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\obj\Debug\netcoreapp3.1\NerdStore.Catalogo.Application.AssemblyInfo.cs
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\obj\Debug\netcoreapp3.1\NerdStore.Catalogo.Application.csproj.CoreCompileInputs.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\obj\Debug\netcoreapp3.1\NerdStore.Catalogo.Application.csproj.CopyComplete
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\obj\Debug\netcoreapp3.1\NerdStore.Catalogo.Application.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Catalogo.Application\obj\Debug\netcoreapp3.1\NerdStore.Catalogo.Application.pdb

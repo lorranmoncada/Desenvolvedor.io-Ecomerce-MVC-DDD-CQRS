@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "aHdr0mWY5sRSB4W6Y/46HTm7I3jyrGTaKf8Jd6+DR5+ygVIIezsk9Y35qxqwLUjFwtrblMuhujxd7y7LJvCjUw==",
+  "success": true,
+  "projectFilePath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lmm\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
+    "C:\\Users\\lmm\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,9 @@
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Infraestructure\bin\Debug\netcoreapp3.1\NerdStore.Vendas.Infraestructure.deps.json
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Infraestructure\bin\Debug\netcoreapp3.1\NerdStore.Vendas.Infraestructure.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Infraestructure\bin\Debug\netcoreapp3.1\NerdStore.Vendas.Infraestructure.pdb
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Infraestructure\obj\Debug\netcoreapp3.1\NerdStore.Vendas.Infraestructure.csprojAssemblyReference.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Infraestructure\obj\Debug\netcoreapp3.1\NerdStore.Vendas.Infraestructure.AssemblyInfoInputs.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Infraestructure\obj\Debug\netcoreapp3.1\NerdStore.Vendas.Infraestructure.AssemblyInfo.cs
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Infraestructure\obj\Debug\netcoreapp3.1\NerdStore.Vendas.Infraestructure.csproj.CoreCompileInputs.cache
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Infraestructure\obj\Debug\netcoreapp3.1\NerdStore.Vendas.Infraestructure.dll
+C:\EComerceCurso\NerdStore\src\NerdStore.Vendas.Infraestructure\obj\Debug\netcoreapp3.1\NerdStore.Vendas.Infraestructure.pdb
