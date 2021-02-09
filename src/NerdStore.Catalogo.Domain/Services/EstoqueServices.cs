@@ -27,7 +27,7 @@ namespace NerdStore.Catalogo.Domain.Services
 
             produto.DebitarEstoque(quantidade);
 
-            //Evento disparado 
+            // Evento disparado 
             // Parametrizar a quantidade de esto baixo
             if (produto.QuantidadeEstoque < 10)
             {
