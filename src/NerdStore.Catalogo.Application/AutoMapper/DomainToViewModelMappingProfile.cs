@@ -13,7 +13,7 @@ namespace NerdStore.Catalogo.Application.AutoMapper
     {
         public DomainToViewModelMappingProfile()
         {
-            // Descubra uma forma de mapear Categoria para CategoriaView model, Produto para ProdutoViewModel...
+            // Categoria para CategoriaView model, Produto para ProdutoViewModel...
             CreateMap<Categoria, CategoriaViewModel>();
 
 

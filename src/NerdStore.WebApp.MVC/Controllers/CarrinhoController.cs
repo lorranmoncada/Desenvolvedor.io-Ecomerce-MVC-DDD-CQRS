@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
 using NerdStore.Catalogo.Application.Services;
 using NerdStore.Core.Mediator;
+using NerdStore.Core.Message.CommonMessages.Notifications;
 using NerdStore.Vendas.Application.Commands;
 using System;
 using System.Collections.Generic;
@@ -12,11 +14,12 @@ namespace NerdStore.WebApp.MVC.Controllers
     public class CarrinhoController : ControllerBase
     {
         private readonly IProdutoAppService _produtoAppService;
-        private readonly IMediateHandler _bus;
-        public CarrinhoController(IProdutoAppService produtoAppService, IMediateHandler bus)
+        private readonly IMediateHandler _IMediateHandler;
+        public CarrinhoController(IProdutoAppService produtoAppService, INotificationHandler<DomainNotification> DomainNotificationHandler, IMediateHandler IMediateHandler)
+            : base(DomainNotificationHandler, IMediateHandler)
         {
             _produtoAppService = produtoAppService;
-            _bus = bus;
+            _IMediateHandler = IMediateHandler;
         }
 
         [HttpPost]
@@ -33,14 +36,17 @@ namespace NerdStore.WebApp.MVC.Controllers
             }
 
             var command = new AdicionarItemPedidoCommand(ClienteId, produto.Id, produto.Nome, quantidade, produto.Valor);
-            await _bus.EnviarComando(command);
+            await _IMediateHandler.EnviarComando(command);
 
-            //if (OperacaoValida())
-            //{
-            //    return RedirectToAction("Index");
-            //}
+            if (OperacaoValida())
+            {
+                return RedirectToAction("Index");
+            }
 
-          
+            // Esta sendo usado o TempData porque estou usando o redirectToAction toda ves que uso esse redirection eu perco o 
+            //estado do meu request anterior,então eu preciso persistir minha msg de erro no meu temp data
+            TempData["Erro"] = "Produto Indisponível";
+            // Esse redirect é um novo request
             return RedirectToAction("ProdutoDetalhe", "Vitrine", new { id });
         }
         public IActionResult Index()

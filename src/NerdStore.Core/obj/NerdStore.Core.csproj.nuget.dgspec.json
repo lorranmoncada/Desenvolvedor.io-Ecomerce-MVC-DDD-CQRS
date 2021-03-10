@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {}
+    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {}
   },
   "projects": {
-    "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
         "projectName": "NerdStore.Core",
-        "projectPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
         "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\obj\\",
+        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ojz565y7ZiC9pnRhd5mEwCPuu/nEMKoc44Pe1sNyZwFGj8QosMpnCnAJ6VbvEu5Ba5mEWYo95guhqaMQwdgo2A==",
+  "dgSpecHash": "wT2Cdzc9+l4Gg+3tyUZ3SIJAxbrWOnbklCqr/qJq5IA2URpSiyJkT06FyNzcdjZbUIkmCbv8J7a2MKMk0xD3XQ==",
   "success": true,
-  "projectFilePath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj",
+  "projectFilePath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lmm\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\lmm\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",

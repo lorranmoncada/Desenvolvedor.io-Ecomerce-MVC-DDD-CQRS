@@ -141,6 +141,8 @@
     }
 </style>
 <div class="container">
+    @*Atravez dessa tag ele ira gerar a lista de erros pra mim*@
+   <vc:summary />
     <div class="row">
         <div class="col-xs-4 item-photo">
 
@@ -154,7 +156,6 @@
 
             <p>Apenas @Model.QuantidadeEstoque em estoque!</p>
             <p>@Model.Descricao</p>
-
             <form method="post" asp-controller="Carrinho" asp-action="AdicionarItem">
 
                 <input type="hidden" id="Id" name="Id" value="@Model.Id" />

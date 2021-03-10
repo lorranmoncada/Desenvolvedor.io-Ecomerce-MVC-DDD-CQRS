@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hhHgiwu+f2+1dqvyDRP5C+McUIC5Vt4+ghDNIV8PeiK1YjognWFxIDdcQfgsGTzyvM4WB8QEiX2+ucFUR7CFZg==",
+  "dgSpecHash": "N5GYD0LkM2cgwipwGcC0BzTdBUFV6BLbO59hAanjWg9RVEHbc2ZkUrgRvMvkTbR3Owv48+v73F+2AQ0X9U8AXQ==",
   "success": true,
-  "projectFilePath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.WebApp.MVC\\NerdStore.WebApp.MVC.csproj",
+  "projectFilePath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.WebApp.MVC\\NerdStore.WebApp.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lmm\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\lmm\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

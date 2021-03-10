@@ -2,8 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\NerdStore.Catalogo.Application",
-    "\\tests\\NerdStore.Catalogo.Domain.Tests"
+    "\\src\\NerdStore.Catalogo.Application"
   ],
   "PreviewInSolutionExplorer": false
 }

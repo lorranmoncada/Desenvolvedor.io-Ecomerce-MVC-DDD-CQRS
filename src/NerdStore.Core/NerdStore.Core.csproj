@@ -9,4 +9,9 @@
     <PackageReference Include="MediatR" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Communication\Mediator\" />
+    <Folder Include="Message\CommonMessages\IntegrationEvents\" />
+  </ItemGroup>
+
 </Project>

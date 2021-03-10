@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LpLao7Kmi3tPrK0adIPAD3jNZi5j3XRzWsehRUgpojSvu3vlFXvKLC7O1H+y1sKpr9r2uv0D1XMroL69xPL03g==",
+  "dgSpecHash": "EuQjlO8nZuMNe+/e5A/daWH/xpyPfEakHypwZCW05T8NwokL4lrVTe3cZf5de3O6OFNxIJqU6GQe0JeskbHL3A==",
   "success": true,
-  "projectFilePath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj",
+  "projectFilePath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lmm\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
     "C:\\Users\\lmm\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

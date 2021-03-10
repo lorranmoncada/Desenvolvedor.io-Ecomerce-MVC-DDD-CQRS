@@ -1,5 +1,7 @@
 ﻿using MediatR;
+using NerdStore.Core.Mediator;
 using NerdStore.Core.Message;
+using NerdStore.Core.Message.CommonMessages.Notifications;
 using NerdStore.Vendas.Domain;
 using System;
 using System.Collections.Generic;
@@ -14,9 +16,11 @@ namespace NerdStore.Vendas.Application.Commands
     public class PedidoCommandHandler : IRequestHandler<AdicionarItemPedidoCommand, bool>
     {
         private readonly IPedidoRepository _IPedidoRepository;
-        public PedidoCommandHandler(IPedidoRepository IPedidoRepository)
+        private readonly IMediateHandler _IMediateHandler;
+        public PedidoCommandHandler(IPedidoRepository IPedidoRepository, IMediateHandler IMediateHandler)
         {
             _IPedidoRepository = IPedidoRepository;
+            _IMediateHandler = IMediateHandler;
         }
         // ele sempre retorna uma task poque ele funciona com base assincrona 
         public async Task<bool> Handle(AdicionarItemPedidoCommand message, CancellationToken cancellationToken)
@@ -59,7 +63,7 @@ namespace NerdStore.Vendas.Application.Commands
 
             foreach (var error in message.ValidationResult.Errors)
             {
-                // Lançar evento de erro e não um exception
+                _IMediateHandler.PublicarNotificacao(new DomainNotification(message.MessageType, error.ErrorMessage));
             }
 
             return false;

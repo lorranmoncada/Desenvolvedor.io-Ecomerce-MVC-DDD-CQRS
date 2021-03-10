@@ -5889,11 +5889,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj",
+      "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj",
       "projectName": "NerdStore.Catalogo.Application",
-      "projectPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj",
+      "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj",
       "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-      "outputPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Catalogo.Application\\obj\\",
+      "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5911,11 +5911,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj": {
-              "projectPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj"
+            "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj": {
+              "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj"
             },
-            "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj": {
-              "projectPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj"
+            "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj": {
+              "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p8TEwdAbFwLDyLPiTuUNuLezkmId3jzdRm+8ywTTGXXQB/ogMMAvs9Lr4R8M19ZkdUOue2ED1w2IS4JQcKSdMg==",
+  "dgSpecHash": "v/DEVZV8ywhh4hw9lVAsNImv1xQNy09OY7tDJ31r1tXmbjiTNHJMIWoAWkz9iMiyZPfdKvmj5WVRB0z2U49Knw==",
   "success": true,
-  "projectFilePath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+  "projectFilePath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lmm\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
     "C:\\Users\\lmm\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"

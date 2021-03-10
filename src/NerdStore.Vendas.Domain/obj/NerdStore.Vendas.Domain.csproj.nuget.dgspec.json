@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {}
+    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {}
   },
   "projects": {
-    "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
         "projectName": "NerdStore.Core",
-        "projectPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
         "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\obj\\",
+        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {
+    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
+        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
         "projectName": "NerdStore.Vendas.Domain",
-        "projectPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
+        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
         "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Vendas.Domain\\obj\\",
+        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,8 +94,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\EComerceCurso\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               }
             }
           }

@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using NerdStore.Core.Message;
+using NerdStore.Core.Message.CommonMessages.Notifications;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -27,6 +28,11 @@ namespace NerdStore.Core.Mediator
         {
             // Publish é usado porque não necessáriamente irei alterar minha base de dado mais sim notificar alguma coisa
             await _mediator.Publish(evento);
+        }
+
+        public async Task PublicarNotificacao<T>(T notificacao) where T : DomainNotification
+        {
+            await _mediator.Publish(notificacao);
         }
     }
 }
