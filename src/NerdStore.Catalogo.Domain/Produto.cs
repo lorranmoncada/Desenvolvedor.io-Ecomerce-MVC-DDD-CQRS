@@ -3,6 +3,7 @@ using System;
 
 namespace NerdStore.Catalogo.Domain
 {
+    // classes com a interface de marcação como IAggregateRoot que cuidam de validar os estatos dos objetos filhos
     public class Produto : Entity, IAggregateRoot
     {
         public string Nome { get; private set; }
