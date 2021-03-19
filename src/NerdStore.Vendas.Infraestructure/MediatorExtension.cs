@@ -8,27 +8,32 @@ using System.Threading.Tasks;
 
 namespace NerdStore.Vendas.Infraestructure
 {
+    // È uma classe estatica porque é um método de extensão
     public static class MediatorExtension
     {
-        //public static async Task PublicarEventos(this IMediateHandler mediator, VendasContext ctx)
-        //{
-        //    var domainEntities = ctx.ChangeTracker
-        //        .Entries<Entity>()
-        //        .Where(x => x.Entity.Notificacoes != null && x.Entity.Notificacoes.Any());
+        public static async Task PublicarEventos(this IMediateHandler mediator, VendasContext ctx)
+        {
+            // Ira pegar todas as minhas entidades que estiverem no meu change tracker onde minha entrada seja do tipo Entity
+            var domainEntities = ctx.ChangeTracker
+                .Entries<Entity>()
+                .Where(x => x.Entity.Notificacoes != null && x.Entity.Notificacoes.Any());
 
-        //    var domainEvents = domainEntities
-        //        .SelectMany(x => x.Entity.Notificacoes)
-        //        .ToList();
+            var domainEvents = domainEntities
+                .SelectMany(x => x.Entity.Notificacoes)
+                .ToList();
 
-        //    domainEntities.ToList()
-        //        .ForEach(entity => entity.Entity.LimparEventos());
+            domainEntities.ToList()
+                .ForEach(entity => entity.Entity.LimparEvento());
 
-        //    var tasks = domainEvents
-        //        .Select(async (domainEvent) => {
-        //            await mediator.PublicarEvento(domainEvent);
-        //        });
+            var tasks = domainEvents
+                .Select(async (domainEvent) =>
+                {
+                    await mediator.PublicarEvento(domainEvent);
+                });
 
-        //    await Task.WhenAll(tasks);
-        //}
+            // esse await so vai voltar quando todos os meus eventos forem lançados
+           
+            await Task.WhenAll(tasks);
+        }
     }
 }

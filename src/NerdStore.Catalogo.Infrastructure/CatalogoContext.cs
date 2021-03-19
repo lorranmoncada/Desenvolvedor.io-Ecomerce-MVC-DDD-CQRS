@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using NerdStore.Catalogo.Domain;
 using NerdStore.Core.Data;
+using NerdStore.Core.Message;
 
 namespace NerdStore.Catalogo.Data
 {
@@ -20,6 +21,9 @@ namespace NerdStore.Catalogo.Data
             foreach (var property in modelBuilder.Model.GetEntityTypes().SelectMany(
                 e => e.GetProperties().Where(p => p.ClrType == typeof(string))))
                 property.SetColumnType("varchar(100)");
+
+            // não estou querendo persisitir a classe Event na base
+            modelBuilder.Ignore<Event>();
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly);
         }

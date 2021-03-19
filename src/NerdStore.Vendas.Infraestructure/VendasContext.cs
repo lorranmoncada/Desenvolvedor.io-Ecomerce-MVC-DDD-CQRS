@@ -13,11 +13,11 @@ namespace NerdStore.Vendas.Infraestructure
 {
     public class VendasContext : DbContext, IUnitOfWork
     {
-
-        public VendasContext(DbContextOptions<VendasContext> options)
+        private readonly IMediateHandler _mediateHandler;
+        public VendasContext(DbContextOptions<VendasContext> options, IMediateHandler mediateHandler)
             : base(options)
         {
-
+            _mediateHandler = mediateHandler;
         }
 
         public DbSet<Pedido> Pedidos { get; set; }
@@ -41,7 +41,7 @@ namespace NerdStore.Vendas.Infraestructure
             }
 
             var sucesso = await base.SaveChangesAsync() > 0;
-            //if (sucesso) await _bus.PublicarEvento(this);
+            if (sucesso) await _mediateHandler.PublicarEventos(this);
 
             return sucesso;
         }
@@ -53,7 +53,8 @@ namespace NerdStore.Vendas.Infraestructure
             foreach (var property in modelBuilder.Model.GetEntityTypes().SelectMany(
                 e => e.GetProperties().Where(p => p.ClrType == typeof(string))))
                 property.SetColumnType("varchar(100)");
-
+            
+            // não estou querendo persisitir a classe Entity na base
             modelBuilder.Ignore<Event>();
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(VendasContext).Assembly);

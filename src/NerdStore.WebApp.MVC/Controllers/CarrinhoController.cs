@@ -4,6 +4,7 @@ using NerdStore.Catalogo.Application.Services;
 using NerdStore.Core.Mediator;
 using NerdStore.Core.Message.CommonMessages.Notifications;
 using NerdStore.Vendas.Application.Commands;
+using NerdStore.Vendas.Application.Queries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,16 @@ namespace NerdStore.WebApp.MVC.Controllers
     {
         private readonly IProdutoAppService _produtoAppService;
         private readonly IMediateHandler _IMediateHandler;
-        public CarrinhoController(IProdutoAppService produtoAppService, INotificationHandler<DomainNotification> DomainNotificationHandler, IMediateHandler IMediateHandler)
+        private readonly IPedidoQueries _IPedidoQueries;
+        public CarrinhoController(IProdutoAppService produtoAppService,
+            INotificationHandler<DomainNotification> DomainNotificationHandler,
+            IMediateHandler IMediateHandler,
+            IPedidoQueries IPedidoQueries)
             : base(DomainNotificationHandler, IMediateHandler)
         {
             _produtoAppService = produtoAppService;
             _IMediateHandler = IMediateHandler;
+            _IPedidoQueries = IPedidoQueries;
         }
 
         [HttpPost]
@@ -49,9 +55,29 @@ namespace NerdStore.WebApp.MVC.Controllers
             // Esse redirect é um novo request
             return RedirectToAction("ProdutoDetalhe", "Vitrine", new { id });
         }
-        public IActionResult Index()
+
+        [Route("meu-carrinho")]
+        public async Task<IActionResult> Index()
         {
-            return View();
+            return View(await _IPedidoQueries.ObterCarrinhoCliente(ClienteId));
         }
+
+        //[HttpPost]
+        //[Route("remover-item")]
+        //public async Task<IActionResult> RemoverItem(Guid id)
+        //{
+        //    var produto = await _produtoAppService.ObterPorId(id);
+        //    if (produto == null) return BadRequest();
+
+        //    var command = new RemoverItemPedidoCommand(ClienteId, id);
+        //    await _mediatorHandler.EnviarComando(command);
+
+        //    if (OperacaoValida())
+        //    {
+        //        return RedirectToAction("Index");
+        //    }
+
+        //   return View("Index", await _pedidoQueries.ObterCarrinhoCliente(ClienteId));
+        //}
     }
 }

@@ -217,3 +217,5 @@ C:\NerdStore\NerdStore\src\NerdStore.WebApp.MVC\obj\Debug\net5.0\ref\NerdStore.W
 C:\NerdStore\NerdStore\src\NerdStore.WebApp.MVC\obj\Debug\net5.0\NerdStore.WebApp.MVC.pdb
 C:\NerdStore\NerdStore\src\NerdStore.WebApp.MVC\obj\Debug\net5.0\NerdStore.WebApp.MVC.genruntimeconfig.cache
 C:\NerdStore\NerdStore\src\NerdStore.WebApp.MVC\obj\Debug\net5.0\Razor\Views\Shared\Components\Summary\Default.cshtml.g.cs
+C:\NerdStore\NerdStore\src\NerdStore.WebApp.MVC\obj\Debug\net5.0\Razor\Views\Carrinho\Index.cshtml.g.cs
+C:\NerdStore\NerdStore\src\NerdStore.WebApp.MVC\obj\Debug\net5.0\Razor\Views\Shared\Components\Cart\Default.cshtml.g.cs

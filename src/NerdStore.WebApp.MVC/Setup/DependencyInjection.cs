@@ -9,6 +9,8 @@ using NerdStore.Catalogo.Domain.Services;
 using NerdStore.Core.Mediator;
 using NerdStore.Core.Message.CommonMessages.Notifications;
 using NerdStore.Vendas.Application.Commands;
+using NerdStore.Vendas.Application.Events;
+using NerdStore.Vendas.Application.Queries;
 using NerdStore.Vendas.Domain;
 using NerdStore.Vendas.Infraestructure;
 using NerdStore.Vendas.Infraestructure.Repoditory;
@@ -34,9 +36,16 @@ namespace NerdStore.WebApp.MVC.Setup
             // Toda vez que ProdutoAbaixoEstoqueEvent for lançado o ProdutoEventHandler que ira pegar
             services.AddScoped<INotificationHandler<ProdutoAbaixoEstoqueEvent>, ProdutoEventHandler>();
 
+            // Pedido Events
+            services.AddScoped<INotificationHandler<PedidoRascunhoIniciadoEvent>, PedidoEventHandler>();
+            services.AddScoped<INotificationHandler<PedidoAtualizadoEvent>, PedidoEventHandler>();
+            services.AddScoped<INotificationHandler<PedidoAdicionadoEvent>, PedidoEventHandler>();
+
+
             // Vendas
             services.AddDbContext<VendasContext>();
             services.AddScoped<IPedidoRepository, PedidoRepository>();
+            services.AddScoped<IPedidoQueries, PedidoQueries>();
             services.AddScoped<IRequestHandler<AdicionarItemPedidoCommand, bool>, PedidoCommandHandler>();
         }
     }

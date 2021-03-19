@@ -1,14 +1,35 @@
-﻿using System;
+﻿using NerdStore.Core.Message;
+using System;
+using System.Collections.Generic;
 
 namespace NerdStore.Core.DomainObjects
 {
     public abstract class Entity
     {
         public Guid Id { get; set; }
+        //Event é iguinorado pelo meu ORM pois não sera registrado em meu banco de dados
+        //Essa lista esse objeto Event não é uma entidade
+        private List<Event> _notificacoes;
+        public IReadOnlyCollection<Event> Notificacoes => _notificacoes?.AsReadOnly();
 
         protected Entity()
         {
             Id = Guid.NewGuid();
+        }
+
+        public void AdicionarEvento(Event evento)
+        {
+            _notificacoes = _notificacoes ?? new List<Event>();
+            _notificacoes.Add(evento);
+        }
+
+        public void RemoverEvento(Event evento)
+        {   
+            _notificacoes?.Remove(evento);
+        }
+        public void LimparEvento( )
+        {
+            _notificacoes?.Clear();
         }
 
         public override bool Equals(object obj)
