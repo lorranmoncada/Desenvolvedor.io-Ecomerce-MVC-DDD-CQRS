@@ -35,9 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.WebApp.MVC", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Vendas.Domain", "src\NerdStore.Vendas.Domain\NerdStore.Vendas.Domain.csproj", "{1A39754D-B854-478F-9E19-287D1D9621CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Application", "src\NerdStore.Vendas.Application\NerdStore.Vendas.Application.csproj", "{2DB9F586-56FB-4C88-A064-3ADEA6AE89E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Vendas.Application", "src\NerdStore.Vendas.Application\NerdStore.Vendas.Application.csproj", "{2DB9F586-56FB-4C88-A064-3ADEA6AE89E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Infraestructure", "src\NerdStore.Vendas.Infraestructure\NerdStore.Vendas.Infraestructure.csproj", "{E9892600-8EE4-4AA6-A047-E9891E2C7660}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Vendas.Infraestructure", "src\NerdStore.Vendas.Infraestructure\NerdStore.Vendas.Infraestructure.csproj", "{E9892600-8EE4-4AA6-A047-E9891E2C7660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

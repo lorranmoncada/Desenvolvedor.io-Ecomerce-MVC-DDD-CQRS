@@ -1,7 +1,10 @@
 ﻿using MediatR;
+using NerdStore.Core.DomainObjects.DTO;
+using NerdStore.Core.Extensions;
 using NerdStore.Core.Mediator;
 using NerdStore.Core.Message;
 using NerdStore.Core.Message.CommonMessages.Notifications;
+using NerdStore.Core.Messages.CommonMessages.IntegrationEvents;
 using NerdStore.Vendas.Application.Events;
 using NerdStore.Vendas.Domain;
 using System;
@@ -13,12 +16,14 @@ using System.Threading.Tasks;
 
 namespace NerdStore.Vendas.Application.Commands
 {
-    // classe que manipuladora dos meus comands referentes ao pedido 
-    public class PedidoCommandHandler : 
+    // classe manipuladora dos meus comands referentes ao pedido 
+    // comandos que aplicam as regras de negocios referente a pedidos
+    public class PedidoCommandHandler :
         IRequestHandler<AdicionarItemPedidoCommand, bool>,
         IRequestHandler<AtualizarItemPedidoCommand, bool>,
         IRequestHandler<RemoverItemPedidoCommand, bool>,
-        IRequestHandler<AplicarVoucherPedidoCommand, bool>
+        IRequestHandler<AplicarVoucherPedidoCommand, bool>,
+        IRequestHandler<IniciarPedidoCommand, bool>
     {
         private readonly IPedidoRepository _IPedidoRepository;
         private readonly IMediateHandler _IMediateHandler;
@@ -38,19 +43,20 @@ namespace NerdStore.Vendas.Application.Commands
 
             if (pedido == null)
             {
-                pedido =  Pedido.PedidoFactory.NovoPedidoRascunho(message.ClienteId);
+                pedido = Pedido.PedidoFactory.NovoPedidoRascunho(message.ClienteId);
                 pedido.AdicionarItem(pedidoItem);
 
                 _IPedidoRepository.Adicionar(pedido);
                 pedido.AdicionarEvento(new PedidoRascunhoIniciadoEvent(message.ClienteId, message.ProdutoId));
             }
-            else{
+            else
+            {
                 var pedidoItemExistente = pedido.PedidoItemExistente(pedidoItem);
                 pedido.AdicionarItem(pedidoItem);
 
                 if (pedidoItemExistente)
                 {
-                    _IPedidoRepository.AtualizarItem(pedido.PedidoItems.FirstOrDefault(p => p.ProdutoId == pedidoItem.ProdutoId ));
+                    _IPedidoRepository.AtualizarItem(pedido.PedidoItems.FirstOrDefault(p => p.ProdutoId == pedidoItem.ProdutoId));
                 }
                 else
                 {
@@ -59,7 +65,7 @@ namespace NerdStore.Vendas.Application.Commands
 
                 pedido.AdicionarEvento(new PedidoAtualizadoEvent(pedido.ClienteId, pedido.Id, pedido.ValorTotal));
             }
-            pedido.AdicionarEvento(new PedidoAdicionadoEvent(pedido.ClienteId, pedido.Id, pedidoItem.ProdutoId, pedidoItem.ValorUnitario, pedidoItem.Quantidade,pedidoItem.ProdutoNome));
+            pedido.AdicionarEvento(new PedidoAdicionadoEvent(pedido.ClienteId, pedido.Id, pedidoItem.ProdutoId, pedidoItem.ValorUnitario, pedidoItem.Quantidade, pedidoItem.ProdutoNome));
             return await _IPedidoRepository.IUnitOfWork.Commit();
         }
 
@@ -122,7 +128,7 @@ namespace NerdStore.Vendas.Application.Commands
 
             pedido.AdicionarEvento(new PedidoAtualizadoEvent(message.ClienteId, pedido.Id, pedido.ValorTotal));
             pedido.AdicionarEvento(new PedidoProdutoRemovidoEvent(message.ClienteId, pedido.Id, pedidoItem.Id));
-      
+
             _IPedidoRepository.RemoverItem(pedidoItem);
 
             // se eu quisersse não precisaria chamar esse método porque o meu priprimo pedidoitem esta ligaod ao pedido o changetracker do EF atualiaria altomaticamente
@@ -176,7 +182,33 @@ namespace NerdStore.Vendas.Application.Commands
             //_IPedidoRepository.AtualizarVoucher(voucher);
             return await _IPedidoRepository.IUnitOfWork.Commit();
         }
-        
+
+        public async Task<bool> Handle(IniciarPedidoCommand message, CancellationToken cancellationToken)
+        {
+            if (!ValidarComando(message)) return false;
+
+            var pedido = await _IPedidoRepository.ObterPedidoRascunhoPorClienteId(message.ClienteId);
+
+            if (pedido == null)
+            {
+                await _IMediateHandler.PublicarNotificacao(new DomainNotification("pedido", "Pedido não encontrado"));
+                return false;
+            }
+
+            pedido.IniciarPedido();
+
+            var itemList = new List<Item>();
+
+            pedido.PedidoItems.ForEach(p => itemList.Add(new Item { Id = p.ProdutoId, Quantidade = p.Quantidade }));
+
+            var listaProdutosPedido = new ListaProdutosPedido() { PedidoId = pedido.Id, Itens = itemList };
+
+            pedido.AdicionarEvento(new PedidoIniciadoEvent(pedido.Id, pedido.ClienteId, listaProdutosPedido, pedido.ValorTotal, message.NomeCartao, message.NumeroCartao, message.ExpiracaoCartao, message.CvvCartao));
+
+            _IPedidoRepository.Atualizar(pedido);
+
+            return await _IPedidoRepository.IUnitOfWork.Commit();
+        }
 
         private bool ValidarComando(Command message)
         {

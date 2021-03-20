@@ -8,6 +8,7 @@ using NerdStore.Catalogo.Domain.Events;
 using NerdStore.Catalogo.Domain.Services;
 using NerdStore.Core.Mediator;
 using NerdStore.Core.Message.CommonMessages.Notifications;
+using NerdStore.Core.Messages.CommonMessages.IntegrationEvents;
 using NerdStore.Vendas.Application.Commands;
 using NerdStore.Vendas.Application.Events;
 using NerdStore.Vendas.Application.Queries;
@@ -32,9 +33,11 @@ namespace NerdStore.WebApp.MVC.Setup
             services.AddScoped<IProdutoAppService, ProdutoAppService>();
             services.AddScoped<IEstoqueService, EstoqueServices>();
             services.AddDbContext<CatalogoContext>();
-
+            services.AddScoped<INotificationHandler<PedidoIniciadoEvent>, ProdutoEventHandler>();
             // Toda vez que ProdutoAbaixoEstoqueEvent for lançado o ProdutoEventHandler que ira pegar
             services.AddScoped<INotificationHandler<ProdutoAbaixoEstoqueEvent>, ProdutoEventHandler>();
+
+            
 
             // Pedido Events
             services.AddScoped<INotificationHandler<PedidoRascunhoIniciadoEvent>, PedidoEventHandler>();
@@ -42,15 +45,21 @@ namespace NerdStore.WebApp.MVC.Setup
             services.AddScoped<INotificationHandler<PedidoAdicionadoEvent>, PedidoEventHandler>();
             services.AddScoped<INotificationHandler<PedidoProdutoRemovidoEvent>, PedidoEventHandler>();
             services.AddScoped<INotificationHandler<VoucherAplicadoPedidoEvent>, PedidoEventHandler>();
+            services.AddScoped<INotificationHandler<PedidoEstoqueConfirmadoEvent>, PedidoEventHandler>();
+            services.AddScoped<INotificationHandler<PedidoEstoqueRejeitadoEvent>, PedidoEventHandler>();
+            
 
             // Vendas
             services.AddDbContext<VendasContext>();
             services.AddScoped<IPedidoRepository, PedidoRepository>();
             services.AddScoped<IPedidoQueries, PedidoQueries>();
+
+           // Vendas Commands e Handlers
             services.AddScoped<IRequestHandler<AdicionarItemPedidoCommand, bool>, PedidoCommandHandler>();
             services.AddScoped<IRequestHandler<AtualizarItemPedidoCommand, bool>, PedidoCommandHandler>();
             services.AddScoped<IRequestHandler<RemoverItemPedidoCommand, bool>, PedidoCommandHandler>();
             services.AddScoped<IRequestHandler<AplicarVoucherPedidoCommand, bool>, PedidoCommandHandler>();
+            services.AddScoped<IRequestHandler<IniciarPedidoCommand, bool>, PedidoCommandHandler>(); 
         }
     }
 }

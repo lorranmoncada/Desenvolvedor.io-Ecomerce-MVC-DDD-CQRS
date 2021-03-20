@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <Folder Include="Communication\Mediator\" />
-    <Folder Include="Message\CommonMessages\IntegrationEvents\" />
   </ItemGroup>
 
 </Project>
