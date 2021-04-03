@@ -67,19 +67,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lmm\\.nuget\\packages\\": {}
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+      "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj",
       "projectName": "NerdStore.Core",
-      "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
-      "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-      "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\obj\\",
+      "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+      "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+      "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -87,8 +94,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pitang.pkgs.visualstudio.com/_packaging/pitang.feed@Local/nuget/v3/index.json": {}
+        "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
@@ -130,7 +137,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

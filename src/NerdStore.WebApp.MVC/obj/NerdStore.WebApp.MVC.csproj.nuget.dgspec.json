@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\NerdStore\\NerdStore\\src\\NerdStore.WebApp.MVC\\NerdStore.WebApp.MVC.csproj": {}
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.WebApp.MVC\\NerdStore.WebApp.MVC.csproj": {}
   },
   "projects": {
-    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj": {
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.AntiCorruption\\NerdStore.Pagamentos.AntiCorruption.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj",
-        "projectName": "NerdStore.Catalogo.Application",
-        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj",
-        "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Application\\obj\\",
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.AntiCorruption\\NerdStore.Pagamentos.AntiCorruption.csproj",
+        "projectName": "NerdStore.Pagamentos.AntiCorruption",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.AntiCorruption\\NerdStore.Pagamentos.AntiCorruption.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.AntiCorruption\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,18 +27,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pitang.pkgs.visualstudio.com/_packaging/pitang.feed@Local/nuget/v3/index.json": {}
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj"
-              },
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\NerdStore.Pagamentos.Business.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\NerdStore.Pagamentos.Business.csproj"
               }
             }
           }
@@ -47,16 +49,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[10.1.1, )"
-            },
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -72,21 +64,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj": {
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\NerdStore.Pagamentos.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj",
-        "projectName": "NerdStore.Catalogo.Domain",
-        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj",
-        "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\obj\\",
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\NerdStore.Pagamentos.Business.csproj",
+        "projectName": "NerdStore.Pagamentos.Business",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\NerdStore.Pagamentos.Business.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,15 +91,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pitang.pkgs.visualstudio.com/_packaging/pitang.feed@Local/nuget/v3/index.json": {}
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               }
             }
           }
@@ -116,12 +113,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "MediatR": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -137,21 +128,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj": {
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Data\\NerdStore.Pagamentos.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj",
-        "projectName": "NerdStore.Catalogo.Infrastructure",
-        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\obj\\",
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Data\\NerdStore.Pagamentos.Data.csproj",
+        "projectName": "NerdStore.Pagamentos.Data",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Data\\NerdStore.Pagamentos.Data.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -159,18 +155,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pitang.pkgs.visualstudio.com/_packaging/pitang.feed@Local/nuget/v3/index.json": {}
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\NerdStore.Pagamentos.Business.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\NerdStore.Pagamentos.Business.csproj"
               },
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               }
             }
           }
@@ -215,21 +211,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
-        "projectName": "NerdStore.Core",
-        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
-        "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\obj\\",
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj",
+        "projectName": "NerdStore.Catalogo.Application",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -237,8 +238,238 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pitang.pkgs.visualstudio.com/_packaging/pitang.feed@Local/nuget/v3/index.json": {}
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj"
+              },
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj",
+        "projectName": "NerdStore.Catalogo.Domain",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj",
+        "projectName": "NerdStore.Catalogo.Infrastructure",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj"
+              },
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectName": "NerdStore.Core",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -280,21 +511,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Application\\NerdStore.Vendas.Application.csproj": {
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Application\\NerdStore.Vendas.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Application\\NerdStore.Vendas.Application.csproj",
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Application\\NerdStore.Vendas.Application.csproj",
         "projectName": "NerdStore.Vendas.Application",
-        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Application\\NerdStore.Vendas.Application.csproj",
-        "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Application\\obj\\",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Application\\NerdStore.Vendas.Application.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -302,18 +538,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pitang.pkgs.visualstudio.com/_packaging/pitang.feed@Local/nuget/v3/index.json": {}
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               },
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj"
               }
             }
           }
@@ -342,21 +578,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
         "projectName": "NerdStore.Vendas.Domain",
-        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
-        "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\obj\\",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -364,15 +605,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pitang.pkgs.visualstudio.com/_packaging/pitang.feed@Local/nuget/v3/index.json": {}
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               }
             }
           }
@@ -401,21 +642,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj": {
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj",
         "projectName": "NerdStore.Vendas.Infraestructure",
-        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Infraestructure\\obj\\",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -423,15 +669,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pitang.pkgs.visualstudio.com/_packaging/pitang.feed@Local/nuget/v3/index.json": {}
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj"
               }
             }
           }
@@ -476,21 +722,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\NerdStore\\NerdStore\\src\\NerdStore.WebApp.MVC\\NerdStore.WebApp.MVC.csproj": {
+    "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.WebApp.MVC\\NerdStore.WebApp.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NerdStore\\NerdStore\\src\\NerdStore.WebApp.MVC\\NerdStore.WebApp.MVC.csproj",
+        "projectUniqueName": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.WebApp.MVC\\NerdStore.WebApp.MVC.csproj",
         "projectName": "NerdStore.WebApp.MVC",
-        "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.WebApp.MVC\\NerdStore.WebApp.MVC.csproj",
-        "packagesPath": "C:\\Users\\lmm\\.nuget\\packages\\",
-        "outputPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.WebApp.MVC\\obj\\",
+        "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.WebApp.MVC\\NerdStore.WebApp.MVC.csproj",
+        "packagesPath": "C:\\Users\\Colaborador Datum\\.nuget\\packages\\",
+        "outputPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.WebApp.MVC\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Colaborador Datum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -498,30 +749,39 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pitang.pkgs.visualstudio.com/_packaging/pitang.feed@Local/nuget/v3/index.json": {}
+          "http://artifactory.softplan.com.br/artifactory/api/nuget/v3/nuget-local": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.AntiCorruption\\NerdStore.Pagamentos.AntiCorruption.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.AntiCorruption\\NerdStore.Pagamentos.AntiCorruption.csproj"
               },
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\NerdStore.Pagamentos.Business.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\NerdStore.Pagamentos.Business.csproj"
               },
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Data\\NerdStore.Pagamentos.Data.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Data\\NerdStore.Pagamentos.Data.csproj"
               },
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Application\\NerdStore.Catalogo.Application.csproj"
               },
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Application\\NerdStore.Vendas.Application.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Application\\NerdStore.Vendas.Application.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj"
               },
-              "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj": {
-                "projectPath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj"
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Infrastructure\\NerdStore.Catalogo.Infrastructure.csproj"
+              },
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              },
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Application\\NerdStore.Vendas.Application.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Application\\NerdStore.Vendas.Application.csproj"
+              },
+              "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj": {
+                "projectPath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Vendas.Infraestructure\\NerdStore.Vendas.Infraestructure.csproj"
               }
             }
           }
@@ -585,7 +845,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

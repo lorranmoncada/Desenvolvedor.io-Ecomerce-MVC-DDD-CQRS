@@ -9,7 +9,15 @@
       "DEBUG",
       "NET",
       "NET5_0",
-      "NETCOREAPP"
+      "NETCOREAPP",
+      "NET5_0_OR_GREATER",
+      "NETCOREAPP1_0_OR_GREATER",
+      "NETCOREAPP1_1_OR_GREATER",
+      "NETCOREAPP2_0_OR_GREATER",
+      "NETCOREAPP2_1_OR_GREATER",
+      "NETCOREAPP2_2_OR_GREATER",
+      "NETCOREAPP3_0_OR_GREATER",
+      "NETCOREAPP3_1_OR_GREATER"
     ],
     "languageVersion": "9.0",
     "platform": "",
@@ -36,6 +44,9 @@
           "NerdStore.Catalogo.Domain": "1.0.0",
           "NerdStore.Catalogo.Infrastructure": "1.0.0",
           "NerdStore.Core": "1.0.0",
+          "NerdStore.Pagamentos.AntiCorruption": "1.0.0",
+          "NerdStore.Pagamentos.Business": "1.0.0",
+          "NerdStore.Pagamentos.Data": "1.0.0",
           "NerdStore.Vendas.Application": "1.0.0",
           "NerdStore.Vendas.Infraestructure": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -1548,6 +1559,42 @@
         },
         "compile": {
           "NerdStore.Core.dll": {}
+        }
+      },
+      "NerdStore.Pagamentos.AntiCorruption/1.0.0": {
+        "dependencies": {
+          "NerdStore.Pagamentos.Business": "1.0.0"
+        },
+        "runtime": {
+          "NerdStore.Pagamentos.AntiCorruption.dll": {}
+        },
+        "compile": {
+          "NerdStore.Pagamentos.AntiCorruption.dll": {}
+        }
+      },
+      "NerdStore.Pagamentos.Business/1.0.0": {
+        "dependencies": {
+          "NerdStore.Core": "1.0.0"
+        },
+        "runtime": {
+          "NerdStore.Pagamentos.Business.dll": {}
+        },
+        "compile": {
+          "NerdStore.Pagamentos.Business.dll": {}
+        }
+      },
+      "NerdStore.Pagamentos.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1",
+          "NerdStore.Core": "1.0.0",
+          "NerdStore.Pagamentos.Business": "1.0.0"
+        },
+        "runtime": {
+          "NerdStore.Pagamentos.Data.dll": {}
+        },
+        "compile": {
+          "NerdStore.Pagamentos.Data.dll": {}
         }
       },
       "NerdStore.Vendas.Application/1.0.0": {
@@ -4049,6 +4096,21 @@
       "sha512": ""
     },
     "NerdStore.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NerdStore.Pagamentos.AntiCorruption/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NerdStore.Pagamentos.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NerdStore.Pagamentos.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

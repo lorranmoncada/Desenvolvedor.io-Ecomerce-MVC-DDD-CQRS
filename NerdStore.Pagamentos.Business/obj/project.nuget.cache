@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CuBRH1MlnHRHyfFUoJUPWuWdsxON4kONYaQzjf/M9KrlrHog+pkxhOVA6P8KktOOWCwGAXPqFVGli+IC3A7IgA==",
+  "success": true,
+  "projectFilePath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.Business\\NerdStore.Pagamentos.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

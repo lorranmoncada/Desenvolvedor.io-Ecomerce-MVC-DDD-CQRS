@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2wrcSgsfMQIOOLi1auxZL906ScKP3DL+OHKbIy6Vihww2k3kPDaxVK/vaC1urwaBlv7axh1nWpOBoYxa8RBFLA==",
+  "success": true,
+  "projectFilePath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\NerdStore.Pagamentos.AntiCorruption\\NerdStore.Pagamentos.AntiCorruption.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

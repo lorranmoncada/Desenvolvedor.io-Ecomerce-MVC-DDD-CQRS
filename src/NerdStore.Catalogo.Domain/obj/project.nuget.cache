@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NVUXBsec31qDGysP16ZNI80TgNPQDFySLieDWw5IfoLpQ1jpwVnbxuTpoT9qGCGuIrt4xwlNoVi414W/3o8Iwg==",
+  "dgSpecHash": "15XjxUdW3qisBjS5Zt3rgCrgQPlpxhYAGzT5IaOAphryrNmRfS8tOgAUl7tXOWt6bgj61VlsWHrmsbu2U55WpA==",
   "success": true,
-  "projectFilePath": "C:\\NerdStore\\NerdStore\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj",
+  "projectFilePath": "C:\\Estudo\\Ecomerce-MVC-DDD-CQRS\\src\\NerdStore.Catalogo.Domain\\NerdStore.Catalogo.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lmm\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
-    "C:\\Users\\lmm\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
+    "C:\\Users\\Colaborador Datum\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }

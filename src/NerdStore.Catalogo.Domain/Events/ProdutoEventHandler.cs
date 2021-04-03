@@ -35,7 +35,7 @@ namespace NerdStore.Catalogo.Domain.Events
         {
             var result = await _estoqueService.DebitarListaProdutosPedido(message.ProdutosPedido);
 
-            // Lembrando que os eventos são são disparados em relação ao passado a alguma coisa que ja aconteceu
+            // Lembrando que os eventos são disparados em relação ao passado a alguma coisa que ja aconteceu
             if (result)
             {
                 await _mediateHandler.PublicarEvento(new PedidoEstoqueConfirmadoEvent(message.PedidoId, message.ClienteId, message.Total, message.ProdutosPedido, message.NomeCartao, message.NumeroCartao, message.ExpiracaoCartao, message.CvvCartao));

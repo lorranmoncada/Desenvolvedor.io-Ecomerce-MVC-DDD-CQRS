@@ -9,6 +9,10 @@ using NerdStore.Catalogo.Domain.Services;
 using NerdStore.Core.Mediator;
 using NerdStore.Core.Message.CommonMessages.Notifications;
 using NerdStore.Core.Messages.CommonMessages.IntegrationEvents;
+using NerdStore.Pagamentos.AntiCorruption;
+using NerdStore.Pagamentos.Business;
+using NerdStore.Pagamentos.Data;
+using NerdStore.Pagamentos.Data.Repository;
 using NerdStore.Vendas.Application.Commands;
 using NerdStore.Vendas.Application.Events;
 using NerdStore.Vendas.Application.Queries;
@@ -59,7 +63,15 @@ namespace NerdStore.WebApp.MVC.Setup
             services.AddScoped<IRequestHandler<AtualizarItemPedidoCommand, bool>, PedidoCommandHandler>();
             services.AddScoped<IRequestHandler<RemoverItemPedidoCommand, bool>, PedidoCommandHandler>();
             services.AddScoped<IRequestHandler<AplicarVoucherPedidoCommand, bool>, PedidoCommandHandler>();
-            services.AddScoped<IRequestHandler<IniciarPedidoCommand, bool>, PedidoCommandHandler>(); 
+            services.AddScoped<IRequestHandler<IniciarPedidoCommand, bool>, PedidoCommandHandler>();
+
+            //Pagamento
+            services.AddScoped<IPagamentoRepository, PagamentoRepository>();
+            services.AddScoped<IPagamentoService, PagamentoService>();
+            services.AddScoped<IPagamentoCartaoCreditoFacade, PagamentoCartaoCreditoFacade>();
+            services.AddScoped<IPayPalGateway, PayPalGateway>();
+            services.AddScoped<IConfigurationManager, ConfigurationManager>();
+            services.AddDbContext<PagamentoContext>();
         }
     }
 }

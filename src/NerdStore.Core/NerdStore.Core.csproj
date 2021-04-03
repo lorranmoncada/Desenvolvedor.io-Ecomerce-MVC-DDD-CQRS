@@ -5,12 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="9.4.0" />
-    <PackageReference Include="MediatR" Version="9.0.0" />
+    <Compile Remove="Communication\Mediator\**" />
+    <EmbeddedResource Remove="Communication\Mediator\**" />
+    <None Remove="Communication\Mediator\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Communication\Mediator\" />
+    <PackageReference Include="FluentValidation" Version="9.4.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
   </ItemGroup>
 
 </Project>
