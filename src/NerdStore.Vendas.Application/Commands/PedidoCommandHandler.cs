@@ -23,7 +23,11 @@ namespace NerdStore.Vendas.Application.Commands
         IRequestHandler<AtualizarItemPedidoCommand, bool>,
         IRequestHandler<RemoverItemPedidoCommand, bool>,
         IRequestHandler<AplicarVoucherPedidoCommand, bool>,
-        IRequestHandler<IniciarPedidoCommand, bool>
+        IRequestHandler<IniciarPedidoCommand, bool>,
+        IRequestHandler<FinalizarPedidoCommand, bool>,
+        IRequestHandler<CancelarProcessamentoPedidoEstornarEstoqueCommand, bool>,
+        IRequestHandler<CancelarProcessamentoPedidoCommand, bool>
+
     {
         private readonly IPedidoRepository _IPedidoRepository;
         private readonly IMediateHandler _IMediateHandler;
@@ -208,6 +212,62 @@ namespace NerdStore.Vendas.Application.Commands
             _IPedidoRepository.Atualizar(pedido);
 
             return await _IPedidoRepository.IUnitOfWork.Commit();
+        }
+
+        public async Task<bool> Handle(FinalizarPedidoCommand message, CancellationToken cancellationToken)
+        {
+            var pedido = await _IPedidoRepository.ObterPorId(message.PedidoId);
+
+            if (pedido == null)
+            {
+                await _IMediateHandler.PublicarNotificacao(new DomainNotification("pedido", "Pedido não encontrado!"));
+                return false;
+            }
+
+            pedido.FinalizarPedido();
+            // aqui eu poderia também gerar nota fiscal 
+            pedido.AdicionarEvento(new PedidoFinalizadoEvent(message.PedidoId));
+            // eu nã precisaria chamar o atualizar pedido pois ao alterar o status de pagamento dele e rodando o commit o proprio EF atualizaria minha entidade 
+            _IPedidoRepository.Atualizar(pedido);
+            return await _IPedidoRepository.IUnitOfWork.Commit();
+        }
+
+        public async Task<bool> Handle(CancelarProcessamentoPedidoEstornarEstoqueCommand message, CancellationToken cancellationToken)
+        {
+            var pedido = await _IPedidoRepository.ObterPorId(message.PedidoId);
+
+            if (pedido == null)
+            {
+                await _IMediateHandler.PublicarNotificacao(new DomainNotification("pedido", "Pedido não encontrado!"));
+                return false;
+            }
+
+            var itensList = new List<Item>();
+            pedido.PedidoItems.ForEach(i => itensList.Add(new Item { Id = i.ProdutoId, Quantidade = i.Quantidade }));
+            var listaProdutosPedido = new ListaProdutosPedido { PedidoId = pedido.Id, Itens = itensList };
+
+            // Evento de integração, porque meu context de catálogo manipula esse vento
+            pedido.AdicionarEvento(new PedidoProcessamentoCanceladoEvent(pedido.Id, pedido.ClienteId, listaProdutosPedido));
+            pedido.TornarRascunho();
+
+            return await _IPedidoRepository.IUnitOfWork.Commit();
+        }
+
+        public async Task<bool> Handle(CancelarProcessamentoPedidoCommand message, CancellationToken cancellationToken)
+        {
+            var pedido = await _IPedidoRepository.ObterPorId(message.PedidoId);
+
+            if (pedido == null)
+            {
+                await _IMediateHandler.PublicarNotificacao(new DomainNotification("pedido", "Pedido não encontrado!"));
+                return false;
+            }
+
+            pedido.TornarRascunho();
+
+            //aqui eu poderia chama ro atualizar mas o proprio Ef percebe que minha entidade pedido mudou de status e ao rodar o commit ele alterara minha entidade no banco
+            return await _IPedidoRepository.IUnitOfWork.Commit();
+
         }
 
         private bool ValidarComando(Command message)
