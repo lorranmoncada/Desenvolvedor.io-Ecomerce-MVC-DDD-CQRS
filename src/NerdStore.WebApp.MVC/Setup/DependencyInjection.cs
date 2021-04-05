@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using EventSourcing;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using NerdStore.Catalogo.Application.Services;
 using NerdStore.Catalogo.Data;
@@ -6,6 +7,7 @@ using NerdStore.Catalogo.Data.Repository;
 using NerdStore.Catalogo.Domain;
 using NerdStore.Catalogo.Domain.Events;
 using NerdStore.Catalogo.Domain.Services;
+using NerdStore.Core.Data.EventSourcing;
 using NerdStore.Core.Mediator;
 using NerdStore.Core.Message.CommonMessages.Notifications;
 using NerdStore.Core.Messages.CommonMessages.IntegrationEvents;
@@ -33,6 +35,11 @@ namespace NerdStore.WebApp.MVC.Setup
             // Notifications
             services.AddSingleton<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
 
+            //EventSourcing 
+            services.AddSingleton<IEventStoreService, EventStoreService>();
+            services.AddScoped<IEventSourcingRepository, EventSourcingRepository>();
+            
+
             // Catalogo
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
             services.AddScoped<IProdutoAppService, ProdutoAppService>();
@@ -41,9 +48,7 @@ namespace NerdStore.WebApp.MVC.Setup
             services.AddScoped<INotificationHandler<PedidoIniciadoEvent>, ProdutoEventHandler>();
             // Toda vez que ProdutoAbaixoEstoqueEvent for lançado o ProdutoEventHandler que ira pegar
             services.AddScoped<INotificationHandler<ProdutoAbaixoEstoqueEvent>, ProdutoEventHandler>();
-
-            
-
+          
             // Pedido Events
             services.AddScoped<INotificationHandler<PedidoRascunhoIniciadoEvent>, PedidoEventHandler>();
             services.AddScoped<INotificationHandler<PedidoAtualizadoEvent>, PedidoEventHandler>();
@@ -52,7 +57,6 @@ namespace NerdStore.WebApp.MVC.Setup
             services.AddScoped<INotificationHandler<VoucherAplicadoPedidoEvent>, PedidoEventHandler>();
             services.AddScoped<INotificationHandler<PedidoEstoqueRejeitadoEvent>, PedidoEventHandler>();
             
-
             // Vendas
             services.AddDbContext<VendasContext>();
             services.AddScoped<IPedidoRepository, PedidoRepository>();
@@ -67,7 +71,6 @@ namespace NerdStore.WebApp.MVC.Setup
             services.AddScoped<IRequestHandler<FinalizarPedidoCommand, bool>, PedidoCommandHandler>();
             services.AddScoped<IRequestHandler<CancelarProcessamentoPedidoCommand, bool>, PedidoCommandHandler>();
             services.AddScoped<IRequestHandler<CancelarProcessamentoPedidoEstornarEstoqueCommand, bool>, PedidoCommandHandler>();
-
 
             services.AddScoped<INotificationHandler<PedidoRascunhoIniciadoEvent>, PedidoEventHandler>();
             services.AddScoped<INotificationHandler<PedidoEstoqueRejeitadoEvent>, PedidoEventHandler>();

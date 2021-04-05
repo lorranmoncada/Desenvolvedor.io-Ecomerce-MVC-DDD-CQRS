@@ -1,7 +1,3 @@
-C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.GeneratedMSBuildEditorConfig.editorconfig
-C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.AssemblyInfoInputs.cache
-C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.AssemblyInfo.cs
-C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.csproj.CoreCompileInputs.cache
 C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\bin\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.deps.json
 C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\bin\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.dll
 C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\bin\Debug\net5.0\ref\NerdStore.Pagamentos.AntiCorruption.dll
@@ -11,6 +7,10 @@ C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\bin\Debug\ne
 C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\bin\Debug\net5.0\NerdStore.Pagamentos.Business.pdb
 C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\bin\Debug\net5.0\NerdStore.Core.pdb
 C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.csprojAssemblyReference.cache
+C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.AssemblyInfoInputs.cache
+C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.AssemblyInfo.cs
+C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.csproj.CoreCompileInputs.cache
 C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.csproj.CopyComplete
 C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\NerdStore.Pagamentos.AntiCorruption.dll
 C:\Estudo\Ecomerce-MVC-DDD-CQRS\NerdStore.Pagamentos.AntiCorruption\obj\Debug\net5.0\ref\NerdStore.Pagamentos.AntiCorruption.dll
